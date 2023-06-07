@@ -29,29 +29,3 @@ CREATE TABLE prestamos (
   fecha_salida DATE NOT NULL,
   unidades INT NOT NULL
 );
-CREATE DATABASE IntelliBook;
-
-USE IntelliBook;
-
-CREATE TABLE Alumnos (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  nombre VARCHAR(50) NOT NULL,
-  correo VARCHAR(50) NOT NULL,
-  numeroControl VARCHAR(15) NOT NULL,
-  telefono VARCHAR(15) NOT NULL,
-  carrera VARCHAR(50) NOT NULL
-);
-CREATE TABLE libros (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  titulo VARCHAR(255) NOT NULL,
-  unidades INT NOT NULL,
-  id_libro VARCHAR(255) NOT NULL
-);
-CREATE TABLE prestamos (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  id_libro VARCHAR(50) NOT NULL,
-  numero_control VARCHAR(50) NOT NULL,
-  fecha_entrega DATE NOT NULL,
-  fecha_salida DATE NOT NULL,
-  unidades INT NOT NULL
-);
